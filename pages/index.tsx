@@ -8,12 +8,7 @@ const Home: NextPage = () => {
         <title>DaNextBlog</title>
       </Head>
       <section>
-        <h2 className="text-3xl font-bold underline">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-          dolorum obcaecati aliquid, cupiditate quam libero, nam odio fugiat
-          nulla quod corporis alias error dicta iure amet tempora, porro
-          similique. Cum facilis optio expedita quo molestias.
-        </h2>
+        <h2>DaNextBlog</h2>
       </section>
     </>
   )
