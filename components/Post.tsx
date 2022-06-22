@@ -7,8 +7,6 @@ export const Post = ({ title, content, date }: PostProps) => {
     <div className="p-4 px-6">
       <div>
         <p className="text-sm text-gray-400">Published: {date}</p>
-        {/* click this to go the full post page */}
-        {/* <div> */}
         <Link href="/post-details">
           <a className="font-bold transition-colors hover:text-gray-700">
             {title}{' '}

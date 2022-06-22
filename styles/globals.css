@@ -23,3 +23,9 @@ code {
 .article a {
   @apply underline underline-offset-1 decoration-slate-500 decoration-1 decoration-wavy transition-all hover:decoration-[1.5px];
 }
+
+.outline-text {
+  color: rgb(226, 232, 240);
+  -webkit-text-stroke: 1px rgb(226, 232, 240);
+  -webkit-text-fill-color: transparent;
+}

@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="mt-32 bg-gray-200">
       <div className="container py-4 flex items-center justify-between">
-        <p>&copy; DaNextblog {new Date().getFullYear()}</p>
+        <p className="text-sm">&copy; DaNextblog {new Date().getFullYear()}</p>
 
         <ul className="flex items-center gap-4">
           <li>
