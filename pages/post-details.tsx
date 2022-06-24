@@ -1,5 +1,5 @@
-import { Article } from '../components/Article'
-import { Sidebar } from '../components/Sidebar'
+
+import { Article, Sidebar } from "../components"
 
 const PostDetails = () => {
   return (
