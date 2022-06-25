@@ -1,18 +1,10 @@
-import { useEffect } from 'react'
+import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Prism from 'prismjs'
-import 'prismjs/components/prism-javascript'
-import 'prismjs/components/prism-typescript'
-import 'prismjs/components/prism-css'
-import 'prismjs/themes/prism-okaidia.css'
 
 import { Blogs, Hero } from '../components'
 
 const Home: NextPage = () => {
-  useEffect(() => {
-    Prism.highlightAll()
-  })
 
   return (
     <>
