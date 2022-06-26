@@ -1,5 +1,6 @@
 export { default as Close } from './Close'
 export { default as Github } from './Github'
+export { default as Heart } from './Heart'
 export { default as Linkedln } from './Linkedln'
 export { default as Links } from './Links'
-export { default as Twitter } from './Twitter'
+export { default as View } from './View'
