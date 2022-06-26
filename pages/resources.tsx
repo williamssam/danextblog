@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Title } from '../components/Title'
+
+import { Title } from '../components'
 
 const Resources: NextPage = () => {
   return (
