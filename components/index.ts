@@ -1,6 +1,5 @@
 import Alert from './Alert'
 import { Article } from './Article'
-import { Blogs } from './Blogs'
 import { Footer } from './Footer'
 import { Header } from './Header'
 import { Hero } from './Hero'
@@ -10,19 +9,21 @@ import { Post } from './Post'
 import { Sidebar } from './Sidebar'
 import { Tags } from './Tags'
 import { Title } from './Title'
-
+import { Posts } from './Posts'
+import { CodeBlock } from './CodeBlock'
 
 export {
-    Alert,
-    Article,
-    Blogs,
-    Footer,
-    Header,
-    Hero,
-    InputField,
-    Layout,
-    Post,
-    Sidebar,
-    Tags,
-    Title
+  Alert,
+  Article,
+  Footer,
+  CodeBlock,
+  Header,
+  Hero,
+  Posts,
+  InputField,
+  Layout,
+  Post,
+  Sidebar,
+  Tags,
+  Title,
 }
