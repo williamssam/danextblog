@@ -5,6 +5,10 @@ export const posts = [
     content:
       "How to send an HTTP POST request to an API in Redux using an async action created with the Redux Toolkit's createAsyncThunk() function",
     date: '2018-01-01',
+    slug: 'example-slug',
+    views: 1000,
+    likes: 200,
+    stacks: ['TypeScript', 'JavaScript']
   },
   {
     id: 2,
@@ -13,6 +17,10 @@ export const posts = [
     content:
       "How to send an HTTP POST request to an API in Redux using an async action created with the Redux Toolkit's createAsyncThunk() function",
     date: '2018-01-01',
+    slug: 'example-slug',
+    views: 1000,
+    likes: 200,
+    stacks: ['TypeScript', 'JavaScript']
   },
   {
     id: 3,
@@ -21,6 +29,10 @@ export const posts = [
     content:
       "How to send an HTTP POST request to an API in Redux using an async action created with the Redux Toolkit's createAsyncThunk() function",
     date: '2018-01-01',
+    slug: 'example-slug',
+    views: 1000,
+    likes: 200,
+    stacks: ['TypeScript', 'JavaScript']
   },
   {
     id: 4,
@@ -29,6 +41,10 @@ export const posts = [
     content:
       "How to send an HTTP POST request to an API in Redux using an async action created with the Redux Toolkit's createAsyncThunk() function",
     date: '2018-01-01',
+    slug: 'example-slug',
+    views: 1000,
+    likes: 200,
+    stacks: ['TypeScript', 'JavaScript']
   },
   {
     id: 5,
@@ -37,6 +53,10 @@ export const posts = [
     content:
       "How to send an HTTP POST request to an API in Redux using an async action created with the Redux Toolkit's createAsyncThunk() function",
     date: '2018-01-01',
+    slug: 'example-slug',
+    views: 1000,
+    likes: 200,
+    stacks: ['TypeScript', 'JavaScript']
   },
   {
     id: 6,
@@ -45,6 +65,10 @@ export const posts = [
     content:
       "How to send an HTTP POST request to an API in Redux using an async action created with the Redux Toolkit's createAsyncThunk() function",
     date: '2018-01-01',
+    slug: 'example-slug',
+    views: 1000,
+    likes: 200,
+    stacks: ['TypeScript', 'JavaScript']
   },
 ]
 
