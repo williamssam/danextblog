@@ -1,4 +1,3 @@
-import { Title } from '../components/Title'
 import Links from '../icons/Links'
 
 const ProjectIdeas = () => {
@@ -52,7 +51,7 @@ const ProjectIdeas = () => {
                   </span>
                 </div>
 
-                <div className="flex items-center gap-2 text-xs text-gray-400">
+                <div className="flex items-center gap-3 text-xs text-gray-400">
                   <span>Live</span>
                   <span>Code</span>
                 </div>

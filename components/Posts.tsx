@@ -1,7 +1,7 @@
-import { posts } from '../data/data'
+import { posts } from 'data/data'
 import { Post } from './Post'
 
-export const Blogs = () => {
+export const Posts = () => {
   return (
     <section className="mt-40">
       <div className="container grid grid-cols-3 gap-x-6 gap-y-14">

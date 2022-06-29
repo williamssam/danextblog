@@ -1,7 +1,7 @@
+import { Posts } from 'components/Posts'
+import { Hero } from 'components/Hero'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Blogs } from '../components/Blogs'
-import { Hero } from '../components/Hero'
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Hero />
-        <Blogs />
+        <Posts />
       </main>
     </>
   )

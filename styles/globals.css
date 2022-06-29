@@ -13,15 +13,11 @@ p {
 }
 
 code {
-  @apply bg-slate-200 rounded p-1 text-sm text-slate-600 font-bold font-fira-code;
+  @apply bg-slate-800 rounded p-1 text-[13px] text-slate-50 font-ibm-plex-mono;
 }
 
 .article p {
   @apply mt-5 text-gray-600;
-}
-
-.article a {
-  @apply underline underline-offset-1 decoration-slate-500 decoration-1 decoration-wavy transition-all hover:decoration-[1.5px];
 }
 
 .outline-text {

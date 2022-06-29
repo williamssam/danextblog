@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export const Header = () => {
+  const router = useRouter()
   const links = [
     { id: 1, name: 'blog', route: '/' },
     { id: 3, name: 'resources', route: '/resources' },
@@ -19,7 +21,13 @@ export const Header = () => {
             {links?.map(({ id, name, route }) => (
               <li key={id}>
                 <Link href={route}>
-                  <a>{name}</a>
+                  <a
+                    className={`focus:outline-none ${
+                      router.pathname === route &&
+                      'bg-slate-600 text-slate-100 p-2 rounded-md'
+                    }`}>
+                    {name}
+                  </a>
                 </Link>
               </li>
             ))}
