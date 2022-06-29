@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import img from 'public/assets/bg.jpg'
+import { CodeBlock } from './CodeBlock'
 import { MoreTutorials } from './MoreTutorials'
 import { Tags } from './Tags'
 
@@ -49,6 +50,7 @@ export const Article = () => {
         <iframe
           src="https://stackblitz.com/edit/web-platform-xbkprs?embed=1&file=index.html"
           className="w-full h-96 mt-10 rounded-xl"></iframe>
+        <CodeBlock lang="css" />
         <MoreTutorials />
       </article>
     </>

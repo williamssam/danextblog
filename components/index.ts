@@ -10,11 +10,13 @@ import { Sidebar } from './Sidebar'
 import { Tags } from './Tags'
 import { Title } from './Title'
 import { Posts } from './Posts'
+import { CodeBlock } from './CodeBlock'
 
 export {
   Alert,
   Article,
   Footer,
+  CodeBlock,
   Header,
   Hero,
   Posts,
