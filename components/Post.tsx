@@ -28,7 +28,7 @@ export const Post = ({ title, content, date, slug, views, likes, stacks }: PostP
           {content}
         </p>
         <div className="w-full flex items-center justify-between my-2">
-          <Link href={`/post-details/${slug}`}>
+          <Link href={`/blog/${slug}`}>
             <a className="text-xs text-blue-600 transition-colors hover:text-gray-700">Read more &rarr;</a>
           </Link>
 

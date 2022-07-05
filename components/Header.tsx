@@ -1,8 +1,16 @@
 import Link from 'next/link'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
+
+import { Sun, Moon } from '../icons'
 
 export const Header = () => {
   const router = useRouter()
+  const [lightMode, setLightMode] = useState<boolean>(true)
+
+  const toggleThemeMode = () => {
+    setLightMode((prevState) => !prevState)
+  }
 
   return (
     <header className="grid place-items-center mt-9">
@@ -25,7 +33,17 @@ export const Header = () => {
                 <a className={router.pathname === '/about' ? 'border-b-2 border-white' : ''}>About</a>
               </Link>
             </li>
-            <li>Dark Mode</li>
+            <li>
+              {lightMode ? (
+                <div className="w-6 h-6 flex items-center cursor-pointer" onClick={toggleThemeMode}>
+                  <Sun />
+                </div>
+              ) : (
+                <div className="w-6 h-6 flex items-center cursor-pointer" onClick={toggleThemeMode}>
+                  <Moon />
+                </div>
+              )}
+            </li>
           </ul>
         </nav>
       </div>

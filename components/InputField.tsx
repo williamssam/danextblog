@@ -1,27 +1,29 @@
-import { FC } from "react"
+import React, { FC } from "react"
 
-
-interface Props{
-    label: string
+type InputProps = {
+    label?: string
     type: string
-    id: string
     name: string
     placeholder: string
-    value: any
+    value: string | number
     onChange: (e:any) => void
-    error: any
-    errorText: string
-    fullwidth: boolean
+    onFocus?: (e: any) => void
+    onBlur?: (e: any) => void
+    error?: any
+    errorText?: string
+    fullwidth?: boolean
 }
 
-const InputField:FC<Props> = ({ label, type, id, name, placeholder, value, onChange, error, errorText, fullwidth }) => {
+const InputField:FC<InputProps> = ({label, type, name, placeholder, value, onChange, onFocus, onBlur, error, errorText, fullwidth}) => {
     return(
-        <div className={fullwidth ? `w-full h-14 flex flex-col items-center` : `w-1/2 h-14 flex flex-col items-center`}>
-            <label className="block text-gray-700 text-md font-bold mb-2" htmlFor={name}>
-                {label}
-            </label>
-            <input className="w-full h-12 bg-white rounded-md drop-shadow-2xl px-2 border-2 focus:border-2 focus:border-slate-700 focus:outline-none transition-all duration-500" type={type} id={id} name={name} placeholder={placeholder} value={value} onChange={onChange} />
-            {error && <p className="text-red-500 text-xs font-light">{errorText}</p>}
+        <div className="my-4">
+            <label htmlFor={name} className='text-sm'>{label}</label>
+            <div className={fullwidth ? `w-full h-10 flex flex-col items-center focus-within:border-none focus-within:outline-none transition-all duration-500` : `w-1/2 h-10 flex flex-col items-center focus-within:border-none focus-within:outline-none transition-all duration-500`}>
+                <input className="w-full h-full bg-white rounded-md drop-shadow-2xl px-2" type={type} name={name} placeholder={placeholder} value={value} onChange={onChange} onFocus={onFocus} onBlur={onBlur} />
+            </div>
+            {error && (<p className="text-red-500 text-xs font-light">
+                {errorText}
+            </p>)}
         </div>
     )
 }
