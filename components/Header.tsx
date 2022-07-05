@@ -30,8 +30,7 @@ export const Header = () => {
             {links?.map(({ id, name, route }) => (
               <li key={id}>
                 <Link href={route}>
-                  <a
-                    className={`focus:outline-none ${
+                  <a className={`focus:outline-none ${
                       router.pathname === route &&
                       'bg-slate-600 text-slate-100 p-2 rounded-md'
                     }`}>

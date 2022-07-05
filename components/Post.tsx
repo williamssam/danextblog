@@ -49,14 +49,9 @@ export const Post = ({
             </p>
           </div>
         </div>
-        <ul className='mt-3 flex items-center gap-2'>
-          {stacks.map((stack) => (
-            <li key={stack} className='bg-slate-200 w-max py-1 px-2 text-xs text-slate-600'>
         <ul className="mt-3 flex items-center gap-2">
           {stacks.map(stack => (
-            <li
-              key={stack}
-              className="bg-slate-200 w-max py-1 px-2 text-xs text-slate-600">
+            <li key={stack} className="bg-slate-200 w-max py-1 px-2 text-xs text-slate-600">
               {stack}
             </li>
           ))}
