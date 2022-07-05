@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         barlow: ['Barlow', 'sans-serif'],
-        'fira-code': ['Fira Code', 'sans-serif'],
+        'ibm-plex-mono': ['IBM Plex Mono', 'sans-serif'],
       },
     },
   },

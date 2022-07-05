@@ -36,7 +36,7 @@ export const Hero = () => {
     {error && (<Alert type='error' message={error} onClose={clearError} />)}
     <section>
       <div className="container">
-        <Title name="The Blog" />
+        <Title name="The No-BS Blog" />
         <p className="pt-4 max-w-lg text-sm text-gray-500">
           Practical tutorials along with working code samples and boilerplate
           projects for real-world web development problems. The tutorials are

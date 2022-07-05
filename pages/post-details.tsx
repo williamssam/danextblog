@@ -1,5 +1,4 @@
-
-import { Article, Sidebar } from "../components"
+import { Article, Sidebar } from 'components'
 
 const PostDetails = () => {
   return (
