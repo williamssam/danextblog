@@ -28,11 +28,15 @@ export const Resource = ({ title, data }: ResourceProps) => {
             </div>
 
             <div className="py-3 px-6 col-span-3">
-              <a href={link} className="flex items-center gap-2 text-xl">
-                {name}
-                {/* todo: on hover shos the links component below */}
-                <Links />
-              </a>
+              <div className="flex items-center gap-2">
+                <a href={link} className="text-xl peer">
+                  {name}
+                  {/* todo: on hover shos the links component below */}
+                </a>
+                <span className="opacity-10 transition-opacity peer-hover:opacity-100">
+                  <Links />
+                </span>
+              </div>
 
               <div className="flex items-center justify-between mt-1">
                 <div className="flex items-center gap-2 text-sm uppercase">

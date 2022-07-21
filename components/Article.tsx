@@ -11,7 +11,7 @@ export const Article = () => {
       <Head>
         <title>Next.js - NavLink Component Example with Active CSS Class</title>
       </Head>
-      <article className="col-span-3 article">
+      <article className="col-span-5 article">
         <header>
           <p className="text-sm text-slate-500">April 12, 2022 - 20 Views</p>
           <h2 className="font-black text-4xl">
