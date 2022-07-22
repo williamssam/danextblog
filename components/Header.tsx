@@ -1,8 +1,17 @@
 import Link from 'next/link'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
+
+import { Sun, Moon } from '../icons'
 
 export const Header = () => {
   const router = useRouter()
+  const [lightMode, setLightMode] = useState<boolean>(true)
+
+  const toggleThemeMode = () => {
+    setLightMode((prevState) => !prevState)
+  }
+
   const links = [
     { id: 1, name: 'blog', route: '/' },
     { id: 3, name: 'resources', route: '/resources' },
@@ -21,8 +30,7 @@ export const Header = () => {
             {links?.map(({ id, name, route }) => (
               <li key={id}>
                 <Link href={route}>
-                  <a
-                    className={`transition-colors p-2 rounded-md hover:bg-slate-500 focus:outline-none ${
+                  <a className={`transition-colors p-2 rounded-md hover:bg-slate-500 focus:outline-none ${
                       router.pathname === route && 'bg-slate-600 text-slate-100'
                     }`}>
                     {name}
@@ -30,7 +38,17 @@ export const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>Dark Mode</li>
+            <li>
+              {lightMode ? (
+                  <div className="w-6 h-6 flex items-center cursor-pointer" onClick={toggleThemeMode}>
+                    <Sun />
+                  </div>
+                ) : (
+                  <div className="w-6 h-6 flex items-center cursor-pointer" onClick={toggleThemeMode}>
+                    <Moon />
+                  </div>
+                )}
+            </li>
           </ul>
         </nav>
       </div>
