@@ -27,5 +27,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Please squash your commit before creating a pull request. We will only merge a PR with just one commit.
 - Your commit message should be descriptive.
+- All file in the components folder should use named export and pages should be default export
 
 ### Still a work in progress...

@@ -1,10 +1,8 @@
 interface ProjectProps {
   title: string
-  name: string
-  info: string
 }
 
-export const Project = ({ title, name, info }: ProjectProps) => {
+export const Project = ({ title }: ProjectProps) => {
   return (
     <section className="relative mt-28">
       <h3 className="outline-text text-5xl capitalize font-black absolute -top-10 -z-10">
@@ -14,7 +12,9 @@ export const Project = ({ title, name, info }: ProjectProps) => {
         <li className=" bg-slate-100 rounded-sm overflow-hidden outline outline-2 outline-slate-200 outline-offset-2 p-3">
           <header className="flex items-center justify-between">
             <div className="leading-none">
-              <h4 className="flex items-center gap-2 text-xl">{name}</h4>
+              <h4 className="flex items-center gap-2 text-xl">
+                Coronavirus Map Virus
+              </h4>
               <span className="text-xs mt-2 text-gray-400 lowercase">
                 React, Vue, Svelte, Javascript
               </span>
@@ -26,7 +26,11 @@ export const Project = ({ title, name, info }: ProjectProps) => {
             </div>
           </header>
 
-          <p className="pt-4 text-sm text-gray-500">{info}</p>
+          <p className="pt-4 text-sm text-gray-500">
+            Offering some amazing tracks, freeCodeCamp is one of the top
+            resources for learning HTML, CSS and JavaScript online.
+            Plus...it&apos;s free! Can&apos;t really argue with that.
+          </p>
         </li>
       </ul>
     </section>

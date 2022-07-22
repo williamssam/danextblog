@@ -26,13 +26,12 @@ export const Header = () => {
             <a className="font-black">DaNextBlog</a>
           </Link>
 
-          <ul className="flex items-center gap-6 capitalize">
+          <ul className="flex items-center gap-3 capitalize">
             {links?.map(({ id, name, route }) => (
               <li key={id}>
                 <Link href={route}>
-                  <a className={`focus:outline-none ${
-                      router.pathname === route &&
-                      'bg-slate-600 text-slate-100 p-2 rounded-md'
+                  <a className={`transition-colors p-2 rounded-md hover:bg-slate-500 focus:outline-none ${
+                      router.pathname === route && 'bg-slate-600 text-slate-100'
                     }`}>
                     {name}
                   </a>

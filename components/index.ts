@@ -11,6 +11,7 @@ import { Tags } from './Tags'
 import { Title } from './Title'
 import { Posts } from './Posts'
 import { CodeBlock } from './CodeBlock'
+import { Project } from './Project'
 
 export {
   Alert,
@@ -26,4 +27,5 @@ export {
   Sidebar,
   Tags,
   Title,
+  Project,
 }
