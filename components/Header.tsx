@@ -9,7 +9,7 @@ export const Header = () => {
   const [lightMode, setLightMode] = useState<boolean>(true)
 
   const toggleThemeMode = () => {
-    setLightMode((prevState) => !prevState)
+    setLightMode(prevState => !prevState)
   }
 
   const links = [
@@ -30,8 +30,10 @@ export const Header = () => {
             {links?.map(({ id, name, route }) => (
               <li key={id}>
                 <Link href={route}>
-                  <a className={`transition-colors p-2 rounded-md hover:bg-slate-500 focus:outline-none ${
-                      router.pathname === route && 'bg-slate-600 text-slate-100'
+                  <a
+                    className={`transition-colors p-2 rounded-md hover:bg-slate-500 focus:outline-none ${
+                      router.pathname === route &&
+                      'bg-slate-600 text-slate-100 hover:bg-slate-600'
                     }`}>
                     {name}
                   </a>
@@ -40,14 +42,18 @@ export const Header = () => {
             ))}
             <li>
               {lightMode ? (
-                  <div className="w-6 h-6 flex items-center cursor-pointer" onClick={toggleThemeMode}>
-                    <Sun />
-                  </div>
-                ) : (
-                  <div className="w-6 h-6 flex items-center cursor-pointer" onClick={toggleThemeMode}>
-                    <Moon />
-                  </div>
-                )}
+                <div
+                  className="w-6 h-6 flex items-center cursor-pointer"
+                  onClick={toggleThemeMode}>
+                  <Sun />
+                </div>
+              ) : (
+                <div
+                  className="w-6 h-6 flex items-center cursor-pointer"
+                  onClick={toggleThemeMode}>
+                  <Moon />
+                </div>
+              )}
             </li>
           </ul>
         </nav>
