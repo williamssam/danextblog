@@ -28,7 +28,7 @@ export const Sidebar = () => {
           <div className="grid grid-cols-2 gap-5 pt-5 text-white">
             {reactions?.map(({ emoji, text }) => (
               <button
-                className="bg-gray-400 w-32 h-32 rounded-lg flex flex-col items-center justify-center hover:bg-gray-500 hover:ring-4 hover:ring-gray-400 transition-colors"
+                className="bg-gray-400 w-32 h-32 rounded-lg flex flex-col items-center justify-center hover:bg-gray-500 hover:ring-4 hover:ring-gray-400 hover:scale-105 transition-all"
                 key={text}>
                 <p className="text-3xl">{emoji}</p>
                 <p className="font-bold text-2xl">82</p>
